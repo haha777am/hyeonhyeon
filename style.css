@@ -14,14 +14,8 @@
 
 /* Header */
 .header {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: rgba(255,255,255,0.8);
-  backdrop-filter: blur(8px);
-  z-index: 100;
+  background: transparent;
+  border-bottom: 1px solid #eee;
 }
 
 .header a {
@@ -48,8 +42,13 @@
 }
 
 .hero-text h1 {
-  font-size: 48px;
-  font-weight: 300;
+  font-size: 120px;
+  font-weight: 200;
+}
+
+.hero-text p {
+  font-size: 14px;
+  margin-top: 10px;
   letter-spacing: 2px;
 }
 
@@ -62,8 +61,9 @@
 }
 
 .about h2 {
-  font-size: 32px;
+  font-size: 16px;
   font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .about p {
