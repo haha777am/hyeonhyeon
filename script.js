@@ -1,3 +1,11 @@
+const heroTitle = document.querySelector(".hero-text h1");
+
+window.addEventListener("scroll", () => {
+  const offset = window.scrollY * 0.05;
+  heroTitle.style.transform = `translateX(${offset}px)`;
+});
+
+/* 이미지 등장 애니메이션 */
 const items = document.querySelectorAll(".item");
 
 window.addEventListener("scroll", () => {
@@ -16,5 +24,5 @@ window.addEventListener("scroll", () => {
 items.forEach(item => {
   item.style.opacity = "0";
   item.style.transform = "translateY(40px)";
-  item.style.transition = "all 0.6s ease";
+  item.style.transition = "all 0.8s ease";
 });
